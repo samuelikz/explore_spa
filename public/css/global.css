@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff9d
+}
+
+.title{
+    color: #E1E1E6;
+    font-size: 4.8rem;
+    font-weight: bold;
+    padding-bottom: 1.6rem;
+}
+
+.description{
+    width: 60%;
+}
+
+.description p{
+    color: #e1e1e69f;
+    font-size: 1.8rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.6rem;
+    
+    background-image: url(../image/mountains-universe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 8rem;
+    padding-bottom: 6.3rem;
+    width: 100%;
+}
+
+.navbar a{
+    font-size: 2.3rem;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
+
+.navbar a.active {
+    font-weight: bold;
+    color: #ffffffc7; /* Cor branca pura */
+}
+
+.content{
+    padding: 6.3rem;
+}
+
+.box-content{
+    padding-top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-content button{
+    background: none;
+    border: 1.4px solid;
+    border-radius: 5px;
+    padding: 1.5rem 3.2rem;
+    cursor: pointer;
+    color: #E1E1E6;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .navbar img{
+        display: none;
+    }
+
+    .box-content{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    #app{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: max-content;
+        padding: 0px;
+    }
+
+    .description{
+        width: 90%;
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 2rem;
+    }
+}
